@@ -65,7 +65,6 @@ const genre = [
   "Other"
 ]
 
-
 interface SongInterface {
     title : string,
     author : string,
@@ -83,7 +82,7 @@ const songSchema : Schema<SongInterface> = new Schema({
         type :String,
         required : true
     },
-     genre : {
+    genre : {
         type :String,
         enum : genre,
         required : true
